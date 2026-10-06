@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h2>ShopEase</h2>
+
+    <nav>
+        <a href="products.html">Products</a>
+        <a href="orders.html">Orders</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+
+</header>
+
+<section class="cart-section">
+
+    <h1>Shopping Cart</h1>
+
+    <div id="cartContainer"></div>
+
+    <h2 id="total"></h2>
+
+    <button class="btn" onclick="placeOrder()">
+        Place Order
+    </button>
+
+</section>
+
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

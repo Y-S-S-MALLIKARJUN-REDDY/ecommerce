@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h2>Admin Dashboard</h2>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#products">Products</a>
+        <a href="#orders">Orders</a>
+        <a href="#" onclick="adminLogout()">Logout</a>
+    </nav>
+
+</header>
+
+<section class="admin-container">
+
+    <h1>Dashboard</h1>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+            <h3>Total Products</h3>
+            <p id="productCount">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Total Orders</h3>
+            <p id="orderCount">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Total Users</h3>
+            <p id="userCount">0</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 id="products">Product Management</h2>
+
+    <form id="productForm" class="admin-form">
+
+        <input
+            type="text"
+            id="productName"
+            placeholder="Product Name"
+            required
+        >
+
+        <input
+            type="number"
+            id="productPrice"
+            placeholder="Price"
+            required
+        >
+
+        <select id="productCategory">
+
+            <option value="Electronics">
+                Electronics
+            </option>
+
+            <option value="Clothing">
+                Clothing
+            </option>
+
+            <option value="Shoes">
+                Shoes
+            </option>
+
+        </select>
+
+        <input
+            type="text"
+            id="productImage"
+            placeholder="Image URL"
+            required
+        >
+
+        <button class="btn" type="submit">
+            Add Product
+        </button>
+
+    </form>
+
+    <div id="adminProducts"></div>
+
+    <hr>
+
+    <h2 id="orders">Order Management</h2>
+
+    <div id="adminOrders"></div>
+
+</section>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
